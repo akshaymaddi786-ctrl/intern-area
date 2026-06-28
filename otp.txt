@@ -1,0 +1,631 @@
+
+
+============================================================
+Timestamp: 2026-06-17T06:38:50.476Z
+To: test@example.com
+Subject: Password reset OTP Verification
+OTP: 141999
+Text Content:
+Use this OTP to continue with your password reset request.
+
+Your OTP is: 141999
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-17T06:41:04.198Z
+To: kannnyym@gmail.com
+Subject: Password reset OTP Verification
+OTP: 877552
+Text Content:
+Use this OTP to continue with your password reset request.
+
+Your OTP is: 877552
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-17T06:44:21.640Z
+To: test2@example.com
+Subject: Password reset OTP Verification
+OTP: 688270
+Text Content:
+Use this OTP to continue with your password reset request.
+
+Your OTP is: 688270
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-17T06:48:27.078Z
+To: test3@example.com
+Subject: Password reset OTP Verification
+OTP: 262808
+Text Content:
+Use this OTP to continue with your password reset request.
+
+Your OTP is: 262808
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-17T08:29:31.072Z
+To: kannnyym@gmail.com
+Subject: Login verification OTP Verification
+OTP: 303336
+Text Content:
+Use this OTP to complete your Chrome browser login verification.
+
+Your OTP is: 303336
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-17T08:30:04.731Z
+To: kannnyym@gmail.com
+Subject: Login verification OTP Verification
+OTP: 363889
+Text Content:
+Use this OTP to complete your Chrome browser login verification.
+
+Your OTP is: 363889
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-17T08:30:14.203Z
+To: kannnyym@gmail.com
+Subject: Login verification OTP Verification
+OTP: 989506
+Text Content:
+Use this OTP to complete your Chrome browser login verification.
+
+Your OTP is: 989506
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-18T04:32:05.477Z
+To: kannnyym@gmail.com
+Subject: Login verification OTP Verification
+OTP: 303160
+Text Content:
+Use this OTP to complete your Chrome browser login verification.
+
+Your OTP is: 303160
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-18T04:32:54.483Z
+To: kannnyym@gmail.com
+Subject: French language change OTP Verification
+OTP: 312886
+Text Content:
+Use this OTP to verify your French language preference.
+
+Your OTP is: 312886
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-18T04:33:32.125Z
+To: kannnyym@gmail.com
+Subject: French language change OTP Verification
+OTP: 882814
+Text Content:
+Use this OTP to verify your French language preference.
+
+Your OTP is: 882814
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-18T04:33:45.616Z
+To: kannnyym@gmail.com
+Subject: French language change OTP Verification
+OTP: 049696
+Text Content:
+Use this OTP to verify your French language preference.
+
+Your OTP is: 049696
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-18T04:36:45.387Z
+To: kannnyym@gmail.com
+Subject: Subscription payment OTP Verification
+OTP: 635314
+Text Content:
+Use this OTP to verify your Free plan payment.
+
+Your OTP is: 635314
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-18T04:36:59.686Z
+To: kannnyym@gmail.com
+Subject: Invoice for Free plan
+OTP: N/A
+Text Content:
+Your payment was successful.
+
+Plan: Free
+Invoice: INV-1781757419667
+Amount: ₹0
+Invoice URL: /invoices/INV-1781757419667.pdf
+============================================================
+
+============================================================
+Timestamp: 2026-06-18T04:38:41.113Z
+To: kannnyym@gmail.com
+Subject: Subscription payment OTP Verification
+OTP: 236498
+Text Content:
+Use this OTP to verify your Free plan payment.
+
+Your OTP is: 236498
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-18T04:39:04.092Z
+To: kannnyym@gmail.com
+Subject: Subscription payment OTP Verification
+OTP: 340998
+Text Content:
+Use this OTP to verify your Free plan payment.
+
+Your OTP is: 340998
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-18T04:39:16.805Z
+To: kannnyym@gmail.com
+Subject: Invoice for Free plan
+OTP: N/A
+Text Content:
+Your payment was successful.
+
+Plan: Free
+Invoice: INV-1781757556783
+Amount: ₹0
+Invoice URL: /invoices/INV-1781757556783.pdf
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:31:30.000Z
+To: test-user-fysuv@example.com
+Subject: French language change OTP Verification
+OTP: 943315
+Text Content:
+Use this OTP to verify your French language preference.
+
+Your OTP is: 943315
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:31:33.078Z
+To: test-user-fysuv@example.com
+Subject: Password reset OTP Verification
+OTP: 379283
+Text Content:
+Use this OTP to continue with your password reset request.
+
+Your OTP is: 379283
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:31:56.988Z
+To: test-user-z3n3bv@example.com
+Subject: French language change OTP Verification
+OTP: 533233
+Text Content:
+Use this OTP to verify your French language preference.
+
+Your OTP is: 533233
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:32:00.172Z
+To: test-user-z3n3bv@example.com
+Subject: Password reset OTP Verification
+OTP: 704421
+Text Content:
+Use this OTP to continue with your password reset request.
+
+Your OTP is: 704421
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:32:03.149Z
+To: test-user-z3n3bv@example.com
+Subject: Login verification OTP Verification
+OTP: 782903
+Text Content:
+Use this OTP to complete your Chrome browser login verification.
+
+Your OTP is: 782903
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:32:06.142Z
+To: test-user-z3n3bv@example.com
+Subject: Subscription payment OTP Verification
+OTP: 210746
+Text Content:
+Use this OTP to verify your Bronze plan payment.
+
+Your OTP is: 210746
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:32:38.703Z
+To: test-user-5s6nwm@example.com
+Subject: French language change OTP Verification
+OTP: 861941
+Text Content:
+Use this OTP to verify your French language preference.
+
+Your OTP is: 861941
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:32:41.639Z
+To: test-user-5s6nwm@example.com
+Subject: Password reset OTP Verification
+OTP: 765048
+Text Content:
+Use this OTP to continue with your password reset request.
+
+Your OTP is: 765048
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:32:44.922Z
+To: test-user-5s6nwm@example.com
+Subject: Login verification OTP Verification
+OTP: 888361
+Text Content:
+Use this OTP to complete your Chrome browser login verification.
+
+Your OTP is: 888361
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:32:47.920Z
+To: test-user-5s6nwm@example.com
+Subject: Subscription payment OTP Verification
+OTP: 904026
+Text Content:
+Use this OTP to verify your Bronze plan payment.
+
+Your OTP is: 904026
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:32:50.740Z
+To: test-user-5s6nwm@example.com
+Subject: Invoice for Bronze plan
+OTP: N/A
+Text Content:
+Your payment was successful.
+
+Plan: Bronze
+Invoice: INV-1782549170736
+Amount: ₹100
+Invoice URL: /invoices/INV-1782549170736.pdf
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:33:28.983Z
+To: test-user-n9kmqi@example.com
+Subject: French language change OTP Verification
+OTP: 861897
+Text Content:
+Use this OTP to verify your French language preference.
+
+Your OTP is: 861897
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:33:32.007Z
+To: test-user-n9kmqi@example.com
+Subject: Password reset OTP Verification
+OTP: 037633
+Text Content:
+Use this OTP to continue with your password reset request.
+
+Your OTP is: 037633
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:33:34.935Z
+To: test-user-n9kmqi@example.com
+Subject: Login verification OTP Verification
+OTP: 923315
+Text Content:
+Use this OTP to complete your Chrome browser login verification.
+
+Your OTP is: 923315
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:33:37.854Z
+To: test-user-n9kmqi@example.com
+Subject: Subscription payment OTP Verification
+OTP: 111868
+Text Content:
+Use this OTP to verify your Bronze plan payment.
+
+Your OTP is: 111868
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:33:40.814Z
+To: test-user-n9kmqi@example.com
+Subject: Invoice for Bronze plan
+OTP: N/A
+Text Content:
+Your payment was successful.
+
+Plan: Bronze
+Invoice: INV-1782549220811
+Amount: ₹100
+Invoice URL: /invoices/INV-1782549220811.pdf
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:34:18.185Z
+To: test-user-cmrx6e@example.com
+Subject: French language change OTP Verification
+OTP: 785402
+Text Content:
+Use this OTP to verify your French language preference.
+
+Your OTP is: 785402
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:34:21.453Z
+To: test-user-cmrx6e@example.com
+Subject: Password reset OTP Verification
+OTP: 746151
+Text Content:
+Use this OTP to continue with your password reset request.
+
+Your OTP is: 746151
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:34:24.576Z
+To: test-user-cmrx6e@example.com
+Subject: Login verification OTP Verification
+OTP: 000218
+Text Content:
+Use this OTP to complete your Chrome browser login verification.
+
+Your OTP is: 000218
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:34:27.509Z
+To: test-user-cmrx6e@example.com
+Subject: Subscription payment OTP Verification
+OTP: 995039
+Text Content:
+Use this OTP to verify your Bronze plan payment.
+
+Your OTP is: 995039
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:34:30.451Z
+To: test-user-cmrx6e@example.com
+Subject: Invoice for Bronze plan
+OTP: N/A
+Text Content:
+Your payment was successful.
+
+Plan: Bronze
+Invoice: INV-1782549270440
+Amount: ₹100
+Invoice URL: /invoices/INV-1782549270440.pdf
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:34:50.553Z
+To: test-user-3vav3j@example.com
+Subject: French language change OTP Verification
+OTP: 045261
+Text Content:
+Use this OTP to verify your French language preference.
+
+Your OTP is: 045261
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:34:53.450Z
+To: test-user-3vav3j@example.com
+Subject: Password reset OTP Verification
+OTP: 419107
+Text Content:
+Use this OTP to continue with your password reset request.
+
+Your OTP is: 419107
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:34:56.516Z
+To: test-user-3vav3j@example.com
+Subject: Login verification OTP Verification
+OTP: 244653
+Text Content:
+Use this OTP to complete your Chrome browser login verification.
+
+Your OTP is: 244653
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:34:59.452Z
+To: test-user-3vav3j@example.com
+Subject: Subscription payment OTP Verification
+OTP: 811861
+Text Content:
+Use this OTP to verify your Bronze plan payment.
+
+Your OTP is: 811861
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:35:02.621Z
+To: test-user-3vav3j@example.com
+Subject: Invoice for Bronze plan
+OTP: N/A
+Text Content:
+Your payment was successful.
+
+Plan: Bronze
+Invoice: INV-1782549302613
+Amount: ₹100
+Invoice URL: /invoices/INV-1782549302613.pdf
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:35:20.011Z
+To: test-user-243tu6@example.com
+Subject: French language change OTP Verification
+OTP: 502241
+Text Content:
+Use this OTP to verify your French language preference.
+
+Your OTP is: 502241
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:35:23.111Z
+To: test-user-243tu6@example.com
+Subject: Password reset OTP Verification
+OTP: 363251
+Text Content:
+Use this OTP to continue with your password reset request.
+
+Your OTP is: 363251
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:35:25.957Z
+To: test-user-243tu6@example.com
+Subject: Login verification OTP Verification
+OTP: 771892
+Text Content:
+Use this OTP to complete your Chrome browser login verification.
+
+Your OTP is: 771892
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:35:28.887Z
+To: test-user-243tu6@example.com
+Subject: Subscription payment OTP Verification
+OTP: 642135
+Text Content:
+Use this OTP to verify your Bronze plan payment.
+
+Your OTP is: 642135
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:35:31.893Z
+To: test-user-243tu6@example.com
+Subject: Invoice for Bronze plan
+OTP: N/A
+Text Content:
+Your payment was successful.
+
+Plan: Bronze
+Invoice: INV-1782549331876
+Amount: ₹100
+Invoice URL: /invoices/INV-1782549331876.pdf
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:39:14.676Z
+To: kannnyym@gmail.com
+Subject: Subscription payment OTP Verification
+OTP: 338068
+Text Content:
+Use this OTP to verify your Free plan payment.
+
+Your OTP is: 338068
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:39:34.430Z
+To: kannnyym@gmail.com
+Subject: Invoice for Free plan
+OTP: N/A
+Text Content:
+Your payment was successful.
+
+Plan: Free
+Invoice: INV-1782549574419
+Amount: ₹0
+Invoice URL: /invoices/INV-1782549574419.pdf
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:40:00.373Z
+To: kannnyym@gmail.com
+Subject: Subscription payment OTP Verification
+OTP: 526962
+Text Content:
+Use this OTP to verify your Bronze plan payment.
+
+Your OTP is: 526962
+This OTP expires in 10 minutes.
+============================================================
+
+============================================================
+Timestamp: 2026-06-27T08:40:20.478Z
+To: kannnyym@gmail.com
+Subject: Invoice for Bronze plan
+OTP: N/A
+Text Content:
+Your payment was successful.
+
+Plan: Bronze
+Invoice: INV-1782549620469
+Amount: ₹100
+Invoice URL: /invoices/INV-1782549620469.pdf
+============================================================
