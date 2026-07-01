@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { auth, provider } from "../firebase/firebase";
-import { ChevronDown, Search } from "lucide-react";
+import { ChevronDown, Search, Menu, X } from "lucide-react";
 import { signInWithPopup, signOut } from "firebase/auth";
 import { toast } from "react-toastify";
 import { useSelector } from "react-redux";
@@ -18,6 +18,7 @@ const Navbar = () => {
   const { language, setLanguage, t } = useLanguage();
   const [showLangMenu, setShowLangMenu] = useState(false);
   const [pendingLogin, setPendingLogin] = useState<{ loginId: string; email: string } | null>(null);
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
   const langRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -146,10 +147,21 @@ const Navbar = () => {
       <nav className="bg-white shadow-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
-            <div className="flex-shrink-0">
-              <a href="/" className="text-xl font-bold text-blue-600">
-                <img src={"/logo.png"} alt="" className="h-16" />
-              </a>
+            <div className="flex items-center">
+              {/* Mobile Menu Toggle (lg:hidden) */}
+              <button
+                onClick={() => setShowMobileMenu((prev) => !prev)}
+                className="lg:hidden text-gray-700 hover:text-blue-600 focus:outline-none mr-2 p-1"
+                aria-label="Toggle menu"
+              >
+                {showMobileMenu ? <X size={24} /> : <Menu size={24} />}
+              </button>
+
+              <div className="flex-shrink-0">
+                <a href="/" className="text-xl font-bold text-blue-600">
+                  <img src={"/logo.png"} alt="" className="h-16" />
+                </a>
+              </div>
             </div>
 
             <div className="hidden lg:flex items-center space-x-6">
@@ -244,6 +256,65 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+        {/* Mobile Menu Drawer */}
+        {showMobileMenu && (
+          <div className="lg:hidden border-t border-gray-200 bg-white px-4 py-4 space-y-3 shadow-inner">
+            <Link
+              href="/internship"
+              onClick={() => setShowMobileMenu(false)}
+              className="block text-gray-700 hover:text-blue-600 font-medium py-1"
+            >
+              {t("internships")}
+            </Link>
+            <Link
+              href="/job"
+              onClick={() => setShowMobileMenu(false)}
+              className="block text-gray-700 hover:text-blue-600 font-medium py-1"
+            >
+              {t("jobs")}
+            </Link>
+            <Link
+              href="/public-space"
+              onClick={() => setShowMobileMenu(false)}
+              className="block text-gray-700 hover:text-blue-600 font-medium py-1"
+            >
+              {t("publicSpace")}
+            </Link>
+            <Link
+              href="/resume"
+              onClick={() => setShowMobileMenu(false)}
+              className="block text-gray-700 hover:text-blue-600 font-medium py-1"
+            >
+              {t("createResume")}
+            </Link>
+            <Link
+              href="/subscription"
+              onClick={() => setShowMobileMenu(false)}
+              className="block text-gray-700 hover:text-blue-600 font-medium py-1"
+            >
+              {t("subscriptionPlans")}
+            </Link>
+            <div className="flex items-center bg-gray-100 rounded-full px-4 py-2 mt-2">
+              <Search size={16} className="text-gray-400" />
+              <input
+                type="text"
+                placeholder={t("searchPlaceholder")}
+                className="ml-2 bg-transparent focus:outline-none text-sm w-full"
+              />
+            </div>
+            {user && (
+              <button
+                className="w-full text-left py-2 text-red-600 font-medium border-t border-gray-100 mt-2"
+                onClick={() => {
+                  handlelogout();
+                  setShowMobileMenu(false);
+                }}
+              >
+                {t("logout")}
+              </button>
+            )}
+          </div>
+        )}
       </nav>
     </div>
   );
