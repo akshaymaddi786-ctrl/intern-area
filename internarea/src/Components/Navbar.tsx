@@ -85,9 +85,13 @@ const Navbar = () => {
       }
 
       toast.success("Logged in successfully");
-    } catch (error) {
+    } catch (error: any) {
       console.error(error);
-      toast.error("Login failed");
+      if (error?.code === "auth/unauthorized-domain") {
+        toast.error("Firebase Auth: This domain is not whitelisted. Please add this domain under Authorized Domains in your Firebase console Settings.");
+      } else {
+        toast.error(error?.message || "Login failed");
+      }
     }
   };
 
