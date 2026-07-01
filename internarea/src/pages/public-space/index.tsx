@@ -7,6 +7,16 @@ import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
 
+function getYouTubeEmbedUrl(url: string) {
+  if (!url) return null;
+  const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+  const match = url.match(regExp);
+  if (match && match[2].length === 11) {
+    return `https://www.youtube.com/embed/${match[2]}`;
+  }
+  return null;
+}
+
 export default function PublicSpacePage() {
   const user = useSelector(selectuser);
   const { t } = useLanguage();
@@ -145,7 +155,23 @@ export default function PublicSpacePage() {
                 </div>
                 <div className="mt-4 rounded-2xl bg-slate-100 p-4 text-sm text-slate-600">
                   {post.contentType === "video" ? (
-                    <video controls className="h-full w-full rounded-2xl object-cover" src={post.fileUrl} />
+                    (() => {
+                      const embedUrl = getYouTubeEmbedUrl(post.fileUrl);
+                      return embedUrl ? (
+                        <iframe
+                          src={embedUrl}
+                          className="aspect-video w-full rounded-2xl border-0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          title="Video player"
+                        />
+                      ) : (
+                        <video controls className="h-full w-full rounded-2xl object-cover">
+                          <source src={post.fileUrl} />
+                          Your browser does not support the video tag.
+                        </video>
+                      );
+                    })()
                   ) : (
                     <img src={post.fileUrl} alt={post.caption || "Community post"} className="h-full w-full rounded-2xl object-cover" />
                   )}
