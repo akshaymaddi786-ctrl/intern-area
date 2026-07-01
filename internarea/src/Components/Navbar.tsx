@@ -124,9 +124,23 @@ const Navbar = () => {
     }
   };
 
+  const handleGuestLogin = () => {
+    const guestUser = {
+      uid: "guest_user_evaluator",
+      photo: "https://api.dicebear.com/7.x/adventurer/svg?seed=guest",
+      name: "Guest Evaluator",
+      email: "evaluator@internarea.com",
+      phoneNumber: "1234567890",
+    };
+    localStorage.setItem("guestUser", JSON.stringify(guestUser));
+    window.location.reload();
+  };
+
   const handlelogout = () => {
+    localStorage.removeItem("guestUser");
     signOut(auth);
     setPendingLogin(null);
+    window.location.reload();
   };
 
   const currentLangLabel = supportedLanguages.find((item) => item.code === language)?.label || "English";
@@ -249,10 +263,16 @@ const Navbar = () => {
                     </svg>
                     <span className="text-gray-700 hidden sm:inline">{t("continueWithGoogle")}</span>
                   </button>
-                  <Link href="/forgot-password" className="text-sm text-gray-600 hover:text-gray-800">
+                  <button
+                    onClick={handleGuestLogin}
+                    className="bg-blue-600 hover:bg-blue-700 text-white rounded-lg px-3 py-2 text-sm font-medium transition-colors"
+                  >
+                    Bypass Login
+                  </button>
+                  <Link href="/forgot-password" className="text-sm text-gray-600 hover:text-gray-800 hidden md:inline">
                     {t("forgotPassword")}
                   </Link>
-                  <a href="/adminlogin" className="text-sm text-gray-600 hover:text-gray-800">
+                  <a href="/adminlogin" className="text-sm text-gray-600 hover:text-gray-800 hidden md:inline">
                     {t("admin")}
                   </a>
                 </>

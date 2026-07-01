@@ -15,6 +15,17 @@ export default function App({ Component, pageProps }: AppProps) {
   function AuthListener() {
     const dispatch = useDispatch();
     useEffect(() => {
+      const guestUserStr = typeof window !== "undefined" ? localStorage.getItem("guestUser") : null;
+      if (guestUserStr) {
+        try {
+          const guestUser = JSON.parse(guestUserStr);
+          dispatch(login(guestUser));
+          return;
+        } catch (e) {
+          localStorage.removeItem("guestUser");
+        }
+      }
+
       auth.onAuthStateChanged((authuser) => {
         if (authuser) {
           dispatch(
