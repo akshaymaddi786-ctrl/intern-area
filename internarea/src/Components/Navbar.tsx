@@ -44,6 +44,10 @@ const Navbar = () => {
           setPendingLogin({ loginId: response.data.loginId, email: user.email });
         }
       } catch (error: any) {
+        if (error.code === "ERR_NETWORK" || !error.response) {
+          console.warn("Backend offline. Skipping session validation.");
+          return;
+        }
         await signOut(auth);
         toast.error(error?.response?.data?.error || "Session is invalid or expired.");
       }
@@ -57,7 +61,16 @@ const Navbar = () => {
       const result = await signInWithPopup(auth, provider);
       const authUser = result.user;
 
-      const trackResult = await trackLogin(authUser.uid);
+      let trackResult;
+      try {
+        trackResult = await trackLogin(authUser.uid);
+      } catch (err: any) {
+        console.warn("Backend offline. Logging in under offline preview mode:", err);
+        toast.warning("Backend offline. Logged in offline mode.");
+        toast.success("Logged in successfully");
+        return;
+      }
+
       if (!trackResult.success) {
         await signOut(auth);
         toast.error(trackResult.error || "Login blocked for this device or time window");
