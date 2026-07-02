@@ -72,7 +72,7 @@ router.get("/feed", async (req, res) => {
   }
 });
 
-// Like post
+// Like post (Toggle)
 router.post("/:postId/like", async (req, res) => {
   try {
     const { userId } = req.body;
@@ -82,15 +82,16 @@ router.post("/:postId/like", async (req, res) => {
       return res.status(404).json({ success: false, error: "Post not found" });
     }
 
-    const alreadyLiked = post.likes.some((like) => like.userId.toString() === userId);
-    if (alreadyLiked) {
-      return res.status(400).json({ success: false, error: "Already liked this post" });
+    const likeIndex = post.likes.findIndex((like) => like.userId === userId);
+    if (likeIndex > -1) {
+      post.likes.splice(likeIndex, 1);
+      await post.save();
+      return res.json({ success: true, message: "Post unliked", likes: post.likes.length });
+    } else {
+      post.likes.push({ userId });
+      await post.save();
+      return res.json({ success: true, message: "Post liked", likes: post.likes.length });
     }
-
-    post.likes.push({ userId });
-    await post.save();
-
-    res.json({ success: true, message: "Post liked", likes: post.likes.length });
   } catch (error) {
     res.status(500).json({ success: false, error: error.message });
   }
@@ -99,17 +100,17 @@ router.post("/:postId/like", async (req, res) => {
 // Comment on post
 router.post("/:postId/comment", async (req, res) => {
   try {
-    const { userId, text } = req.body;
+    const { userId, userName, userPhoto, text } = req.body;
     const post = await Post.findById(req.params.postId);
 
     if (!post) {
       return res.status(404).json({ success: false, error: "Post not found" });
     }
 
-    post.comments.push({ userId, text });
+    post.comments.push({ userId, userName, userPhoto, text });
     await post.save();
 
-    res.json({ success: true, message: "Comment added", comments: post.comments.length });
+    res.json({ success: true, message: "Comment added", comments: post.comments });
   } catch (error) {
     res.status(500).json({ success: false, error: error.message });
   }
