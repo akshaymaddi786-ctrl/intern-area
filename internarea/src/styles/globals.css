@@ -24,3 +24,14 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Ensure high contrast legibility for all form controls and options */
+input, select, textarea, option {
+  color: #1e293b !important; /* slate-800 */
+  background-color: #ffffff !important;
+}
+
+/* Make sure placeholder text is clearly visible */
+input::placeholder, textarea::placeholder {
+  color: #64748b !important; /* slate-500 */
+}
