@@ -177,7 +177,7 @@ const Navbar = () => {
 
               <div className="flex-shrink-0">
                 <a href="/" className="text-xl font-bold text-blue-600">
-                  <img src={"/logo.png"} alt="" className="h-16" />
+                  <img src={"/logo.png"} alt="" className="h-10 sm:h-16 object-contain transition-transform duration-300 hover:scale-105" />
                 </a>
               </div>
             </div>
@@ -265,7 +265,7 @@ const Navbar = () => {
                   </button>
                   <button
                     onClick={handleGuestLogin}
-                    className="bg-blue-600 hover:bg-blue-700 text-white rounded-lg px-3 py-2 text-sm font-medium transition-colors"
+                    className="hidden lg:inline-block bg-blue-600 hover:bg-blue-700 text-white rounded-lg px-3 py-2 text-sm font-medium transition-colors"
                   >
                     Bypass Login
                   </button>
@@ -326,7 +326,7 @@ const Navbar = () => {
                 className="ml-2 bg-transparent focus:outline-none text-sm w-full"
               />
             </div>
-            {user && (
+            {user ? (
               <button
                 className="w-full text-left py-2 text-red-600 font-medium border-t border-gray-100 mt-2"
                 onClick={() => {
@@ -336,6 +336,34 @@ const Navbar = () => {
               >
                 {t("logout")}
               </button>
+            ) : (
+              <div className="pt-3 border-t border-gray-100 flex flex-col gap-2">
+                <button
+                  onClick={() => {
+                    handleGuestLogin();
+                    setShowMobileMenu(false);
+                  }}
+                  className="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg text-center text-sm transition-colors"
+                >
+                  Bypass Login
+                </button>
+                <div className="flex justify-between px-1 mt-1">
+                  <Link
+                    href="/forgot-password"
+                    onClick={() => setShowMobileMenu(false)}
+                    className="text-xs text-gray-500 hover:text-gray-700"
+                  >
+                    {t("forgotPassword")}
+                  </Link>
+                  <a
+                    href="/adminlogin"
+                    onClick={() => setShowMobileMenu(false)}
+                    className="text-xs text-gray-500 hover:text-gray-700"
+                  >
+                    {t("admin")}
+                  </a>
+                </div>
+              </div>
             )}
           </div>
         )}
